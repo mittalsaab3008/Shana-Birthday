@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Shana ❤️</title>
+<title>Happy Birthday Shana ❤️</title>
 
 <style>
 *{
@@ -18,107 +18,15 @@ html{
 }
 
 body{
-    background:#080309;
+    background:linear-gradient(135deg,#09000d,#25051c,#080009);
     color:white;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-family:Arial,sans-serif;
     overflow-x:hidden;
-}
-
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    z-index:-2;
-    background:
-    radial-gradient(circle at 15% 10%,#6b1645,transparent 32%),
-    radial-gradient(circle at 90% 30%,#391052,transparent 30%),
-    linear-gradient(180deg,#080309,#180713,#080309);
-}
-
-#intro{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    transition:.7s;
-}
-
-.intro-card{
-    width:100%;
-    max-width:520px;
-    padding:45px 25px;
-    text-align:center;
-
-    background:rgba(20,10,22,.75);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:35px;
-
-    backdrop-filter:blur(20px);
-    box-shadow:0 30px 100px rgba(0,0,0,.6);
-}
-
-.envelope{
-    font-size:75px;
-    animation:heartBeat 1.4s infinite;
-}
-
-.kicker{
-    margin-top:20px;
-    color:#f2aecb;
-    font-size:11px;
-    letter-spacing:5px;
-    text-transform:uppercase;
-}
-
-h1{
-    font-family:Georgia,serif;
-    font-size:clamp(55px,15vw,95px);
-    line-height:.9;
-    margin:25px 0;
-}
-
-.pink{
-    color:#ff73ae;
-    text-shadow:0 0 40px rgba(255,70,150,.5);
-}
-
-.intro-card p{
-    color:#d9c5d2;
-    font-size:17px;
-    line-height:1.8;
-}
-
-.tap{
-    margin-top:30px;
-    padding:17px 27px;
-    border:none;
-    border-radius:50px;
-
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-
-    background:linear-gradient(100deg,#ff408d,#a83cff);
-
-    box-shadow:0 15px 55px rgba(255,50,140,.35);
-
-    cursor:pointer;
-}
-
-#main{
-    display:none;
-}
-
-#main.show{
-    display:block;
-    animation:fadeIn 1s ease;
 }
 
 section{
     min-height:100vh;
-    padding:80px 20px;
-
+    padding:70px 20px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -127,172 +35,210 @@ section{
 .container{
     width:100%;
     max-width:950px;
-    margin:auto;
-}
-
-.center{
     text-align:center;
 }
 
-.small{
-    color:#f2afcb;
-    font-size:11px;
-    letter-spacing:5px;
-    text-transform:uppercase;
+h1,h2{
+    font-family:Georgia,serif;
+}
+
+h1{
+    font-size:70px;
 }
 
 h2{
-    font-family:Georgia,serif;
-    font-size:clamp(40px,9vw,75px);
-    line-height:1;
-    margin:20px 0 25px;
+    font-size:55px;
+    margin:20px 0;
+}
+
+.pink{
+    color:#ff6fae;
+    text-shadow:0 0 30px #ff2f8a;
 }
 
 p{
-    color:#d9c5d2;
-    line-height:1.85;
-    font-size:17px;
+    color:#e8d6df;
+    font-size:18px;
+    line-height:1.8;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:28px;
-
-    padding:15px 25px;
+button{
+    margin-top:30px;
+    padding:16px 28px;
+    border:none;
     border-radius:50px;
-
+    background:linear-gradient(90deg,#ff3f91,#9d3cff);
     color:white;
-    text-decoration:none;
+    font-size:16px;
     font-weight:bold;
-
-    background:linear-gradient(100deg,#ff408d,#9e3cff);
-
-    box-shadow:0 12px 45px rgba(255,50,140,.25);
+    cursor:pointer;
 }
+
+/* INTRO */
+
+#intro{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.intro-card{
+    max-width:550px;
+    width:100%;
+    padding:45px 25px;
+    text-align:center;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+}
+
+.envelope{
+    font-size:80px;
+    animation:beat 1.2s infinite;
+}
+
+.kicker{
+    margin:20px 0;
+    letter-spacing:4px;
+    color:#ffb1d0;
+    font-size:12px;
+}
+
+/* MAIN */
+
+#main{
+    display:none;
+}
+
+#main.show{
+    display:block;
+}
+
+/* GALLERY */
 
 .gallery{
+    margin-top:40px;
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin-top:40px;
+    gap:18px;
 }
 
 .photo{
     width:100%;
-    height:360px;
-
+    height:420px;
     object-fit:cover;
-
     border-radius:25px;
-    border:1px solid rgba(255,255,255,.15);
-
-    background:linear-gradient(135deg,#241021,#3a1438);
+    border:2px solid rgba(255,255,255,.15);
 }
 
 .photo:first-child{
     grid-column:span 2;
-    height:500px;
+    height:550px;
 }
+
+/* VIDEO */
+
+.video-box{
+    margin-top:40px;
+    padding:15px;
+    background:rgba(255,255,255,.06);
+    border-radius:25px;
+}
+
+video{
+    width:100%;
+    border-radius:20px;
+}
+
+/* MUSIC */
+
+.music-box{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    z-index:9999;
+}
+
+.music-btn{
+    margin:0;
+    padding:13px 18px;
+    font-size:14px;
+}
+
+/* LETTER */
 
 .card{
-    margin:35px auto;
-    padding:32px;
-
-    border:1px solid rgba(255,255,255,.12);
+    margin-top:40px;
+    padding:35px;
     border-radius:30px;
-
-    background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
 }
 
-.letter{
-    max-width:800px;
-}
-
-.letter p{
-    font-family:Georgia,serif;
-    font-size:19px;
-    color:#f1dde7;
+.card p{
     margin:18px 0;
+    font-family:Georgia,serif;
 }
 
 .signature{
     text-align:right;
-    color:#ff91bf;
-    font:30px Georgia,serif;
-    margin-top:25px;
+    color:#ff8fbd;
+    font-size:25px;
 }
 
-.final-heart{
-    font-size:100px;
-    animation:heartBeat 1.3s infinite;
-}
+/* SECRET */
 
-.secret{
+#secret{
     display:none;
-    margin-top:45px;
+    margin-top:40px;
 }
 
-.secret.show{
+#secret.show{
     display:block;
-    animation:fadeUp 1s ease;
 }
 
-footer{
-    text-align:center;
-    padding:40px 20px;
-    color:#8c7180;
-    font-size:12px;
-}
+/* FLOATING HEARTS */
 
-.float-heart{
+.heart{
     position:fixed;
     bottom:-40px;
-    z-index:9999;
-
     pointer-events:none;
-
-    animation:rise 3.5s linear forwards;
-}
-
-@keyframes heartBeat{
-    50%{
-        transform:scale(1.12);
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+    z-index:9998;
+    animation:rise 4s linear forwards;
 }
 
 @keyframes rise{
     to{
-        transform:translateY(-115vh) rotate(360deg);
+        transform:translateY(-110vh) rotate(360deg);
         opacity:0;
     }
 }
 
+@keyframes beat{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#9b7d8c;
+}
+
+/* MOBILE */
+
 @media(max-width:600px){
 
-    section{
-        padding:65px 16px;
+    h1{
+        font-size:55px;
+    }
+
+    h2{
+        font-size:40px;
     }
 
     .gallery{
@@ -302,15 +248,15 @@ footer{
     .photo,
     .photo:first-child{
         grid-column:auto;
-        height:390px;
+        height:430px;
     }
 
     .photo:first-child{
-        height:470px;
+        height:500px;
     }
 
     .card{
-        padding:25px 19px;
+        padding:25px 18px;
     }
 }
 </style>
@@ -318,38 +264,38 @@ footer{
 
 <body>
 
-<!-- FIRST SCREEN -->
+<!-- INTRO -->
 
 <div id="intro">
 
-    <div class="intro-card">
+<div class="intro-card">
 
-        <div class="envelope">💌</div>
+<div class="envelope">💌</div>
 
-        <div class="kicker">
-            A Private Little Surprise
-        </div>
+<div class="kicker">
+A LITTLE SURPRISE FOR YOU
+</div>
 
-        <h1>
-            For<br>
-            <span class="pink">Shana</span> ❤️
-        </h1>
+<h1>
+For<br>
+<span class="pink">Shana</span> ❤️
+</h1>
 
-        <p>
-            I made something for you.<br>
-            Just one tap... and your surprise begins. ❤️
-        </p>
+<p>
+I made something special for you.<br>
+Tap below and let the surprise begin. ❤️
+</p>
 
-        <button class="tap" onclick="startSurprise()">
-            Tap to open your surprise ❤️
-        </button>
+<button onclick="startSurprise()">
+Tap To Open ❤️
+</button>
 
-    </div>
+</div>
 
 </div>
 
 
-<!-- MAIN WEBSITE -->
+<!-- MAIN -->
 
 <div id="main">
 
@@ -358,26 +304,26 @@ footer{
 
 <section>
 
-<div class="container center">
+<div class="container">
 
-    <div class="small">
-        Today Is Your Day
-    </div>
+<div class="kicker">
+TODAY IS YOUR DAY
+</div>
 
-    <h2>
-        Happy Birthday,<br>
-        <span class="pink">Shana ❤️</span>
-    </h2>
+<h2>
+Happy Birthday,<br>
+<span class="pink">Shana ❤️</span>
+</h2>
 
-    <p>
-        Some people become memories.<br>
-        Some become home.<br>
-        You somehow became both.
-    </p>
+<p>
+Some people become memories.<br>
+Some become home.<br>
+You somehow became both.
+</p>
 
-    <a class="btn" href="#memories">
-        Our Memories ↓
-    </a>
+<button onclick="document.getElementById('memories').scrollIntoView()">
+Our Memories ↓
+</button>
 
 </div>
 
@@ -390,45 +336,62 @@ footer{
 
 <div class="container">
 
-<div class="center">
-
-    <div class="small">
-        Our Memories
-    </div>
-
-    <h2>
-        The Moments I Keep.
-    </h2>
-
-    <p>
-        Five photographs.<br>
-        A thousand feelings.
-    </p>
-
+<div class="kicker">
+OUR MEMORIES
 </div>
 
+<h2>
+The Moments I Keep ❤️
+</h2>
+
+<p>
+Five photographs.<br>
+A thousand feelings.
+</p>
 
 <div class="gallery">
 
-    <img class="photo"
-         src="photo1.jpg"
-         alt="Our memory 1">
+<img class="photo" src="photo1.jpg">
 
-    <img class="photo"
-         src="photo2.jpg"
-         alt="Our memory 2">
+<img class="photo" src="photo2.jpg">
 
-    <img class="photo"
-         src="photo3.jpg"
-         alt="Our memory 3">
+<img class="photo" src="photo3.jpg">
 
-    <img class="photo"
-         src="photo4.jpg"
-         alt="Our memory 4">
+<img class="photo" src="photo4.jpg">
 
-    <img class="photo"
-         src="photo5.jpg"
-         alt="Our memory 5">
+<img class="photo" src="photo5.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VIDEO -->
+
+<section>
+
+<div class="container">
+
+<div class="kicker">
+A LITTLE VIDEO FOR YOU
+</div>
+
+<h2>
+Our Little Story 🎥
+</h2>
+
+<p>
+Some moments are better watched than explained.
+</p>
+
+<div class="video-box">
+
+<video controls playsinline>
+<source src="video.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
 
 </div>
 
@@ -443,56 +406,50 @@ footer{
 
 <div class="container">
 
-<div class="center">
-
-    <div class="small">
-        A Letter For You
-    </div>
-
-    <h2>
-        Read This Slowly.
-    </h2>
-
+<div class="kicker">
+A LETTER FOR YOU
 </div>
 
+<h2>
+Read This Slowly ❤️
+</h2>
 
-<div class="card letter">
+<div class="card">
 
-    <p>
-        Shana,
-    </p>
+<p>
+Shana,
+</p>
 
-    <p>
-        I don't think a website can hold everything
-        I feel for you, but I wanted to try anyway.
-    </p>
+<p>
+I don't think a website can hold everything
+I feel for you, but I wanted to try anyway.
+</p>
 
-    <p>
-        Thank you for the smiles, the little moments
-        that become memories, and for simply being you.
-    </p>
+<p>
+Thank you for the smiles, the little moments
+that become memories, and for simply being you.
+</p>
 
-    <p>
-        On your birthday, I wish you a year full of
-        peace, laughter, confidence, adventures and
-        every little thing your heart secretly wants.
-    </p>
+<p>
+On your birthday, I wish you a year full of
+peace, laughter, adventures and everything
+your heart secretly wants.
+</p>
 
-    <p>
-        And I hope I get to be there for a lot of it —
-        making memories, laughing at stupid things,
-        taking too many pictures and celebrating
-        all the little wins.
-    </p>
+<p>
+And I hope I get to be there for a lot of it —
+making memories, laughing at stupid things,
+taking too many pictures and celebrating
+all the little moments together.
+</p>
 
-    <p>
-        Happy Birthday, Shana.
-        You deserve a beautiful year. ❤️
-    </p>
+<p>
+Happy Birthday, Shana. ❤️
+</p>
 
-    <div class="signature">
-        Always yours. ❤️
-    </div>
+<div class="signature">
+Always yours. ❤️
+</div>
 
 </div>
 
@@ -505,48 +462,47 @@ footer{
 
 <section>
 
-<div class="container center">
+<div class="container">
 
-    <div class="small">
-        One Last Surprise
-    </div>
+<div class="kicker">
+ONE LAST SURPRISE
+</div>
 
-    <div class="final-heart">
-        ❤️
-    </div>
+<div style="font-size:100px">
+❤️
+</div>
 
-    <h2>
-        One Final Click.
-    </h2>
+<h2>
+One Final Click.
+</h2>
 
-    <p>
-        Because you deserve one more little surprise.
-    </p>
+<p>
+Because you deserve one more little surprise.
+</p>
 
-    <button class="tap" onclick="secretMessage()">
-        Open The Secret ❤️
-    </button>
+<button onclick="secretMessage()">
+Open The Secret ❤️
+</button>
 
+<div id="secret">
 
-    <div id="secret" class="secret">
+<h2>
+<span class="pink">
+My favourite chapter<br>
+is still being written.
+</span>
+</h2>
 
-        <h2>
-            <span class="pink">
-                My favourite chapter<br>
-                is still being written.
-            </span>
-        </h2>
+<p>
+Happy Birthday, Shana ❤️
+<br><br>
+Here's to more laughter,
+more photographs,
+more adventures,
+and many more moments together.
+</p>
 
-        <p>
-            Happy Birthday, Shana. ❤️
-            <br><br>
-            Here's to more laughter,
-            more photographs,
-            more adventures,
-            and many more little moments together.
-        </p>
-
-    </div>
+</div>
 
 </div>
 
@@ -554,8 +510,23 @@ footer{
 
 
 <footer>
-    Made specially for Shana ❤️
+Made specially for Shana ❤️
 </footer>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-box">
+
+<button class="music-btn" onclick="toggleMusic()">
+🎵 Music
+</button>
 
 </div>
 
@@ -564,71 +535,80 @@ footer{
 
 function startSurprise(){
 
-    document.getElementById("intro").style.opacity="0";
-    document.getElementById("intro").style.transform="scale(.97)";
+document.getElementById("intro").style.display="none";
 
-    setTimeout(function(){
+document.getElementById("main").classList.add("show");
 
-        document.getElementById("intro").style.display="none";
+let music=document.getElementById("music");
 
-        document.getElementById("main")
-        .classList.add("show");
+music.play().catch(()=>{});
 
-        createHearts();
+createHearts();
 
-        window.scrollTo(0,0);
+window.scrollTo(0,0);
+}
 
-    },650);
+
+function toggleMusic(){
+
+let music=document.getElementById("music");
+
+if(music.paused){
+
+music.play();
+
+}else{
+
+music.pause();
+
+}
+
 }
 
 
 function secretMessage(){
 
-    document.getElementById("secret")
-    .classList.add("show");
+document.getElementById("secret")
+.classList.add("show");
 
-    createHearts();
+createHearts();
 
-    setTimeout(function(){
+document.getElementById("secret")
+.scrollIntoView({
+behavior:"smooth"
+});
 
-        document.getElementById("secret")
-        .scrollIntoView({
-            behavior:"smooth",
-            block:"center"
-        });
-
-    },150);
 }
 
 
 function createHearts(){
 
-    for(let i=0;i<35;i++){
+for(let i=0;i<35;i++){
 
-        let heart=document.createElement("div");
+let heart=document.createElement("div");
 
-        heart.className="float-heart";
+heart.className="heart";
 
-        heart.innerHTML=
-        ["❤️","💗","💕","💖","✨"]
-        [Math.floor(Math.random()*5)];
+heart.innerHTML=
+["❤️","💗","💕","💖","✨"]
+[Math.floor(Math.random()*5)];
 
-        heart.style.left=
-        Math.random()*100+"vw";
+heart.style.left=
+Math.random()*100+"vw";
 
-        heart.style.fontSize=
-        (16+Math.random()*24)+"px";
+heart.style.fontSize=
+(16+Math.random()*25)+"px";
 
-        heart.style.animationDelay=
-        Math.random()*.8+"s";
+heart.style.animationDelay=
+Math.random()+"s";
 
-        document.body.appendChild(heart);
+document.body.appendChild(heart);
 
-        setTimeout(function(){
-            heart.remove();
-        },4500);
+setTimeout(()=>{
+heart.remove();
+},4500);
 
-    }
+}
 
 }
 
