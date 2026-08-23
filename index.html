@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Shana ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#080309;
+    color:white;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    overflow-x:hidden;
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background:
+    radial-gradient(circle at 15% 10%,#6b1645 0%,transparent 30%),
+    radial-gradient(circle at 90% 30%,#391052 0%,transparent 30%),
+    linear-gradient(180deg,#080309,#180713,#080309);
+}
+
+section{
+    min-height:100vh;
+    padding:70px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.center{
+    text-align:center;
+}
+
+.small{
+    color:#f5b6d0;
+    font-size:12px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+}
+
+h1{
+    font-family:Georgia,serif;
+    font-size:clamp(55px,14vw,130px);
+    line-height:.85;
+    margin:30px 0;
+}
+
+.pink{
+    color:#ff72b0;
+    text-shadow:0 0 45px rgba(255,70,150,.4);
+}
+
+h2{
+    font-family:Georgia,serif;
+    font-size:clamp(38px,8vw,70px);
+    margin:20px 0;
+}
+
+p{
+    color:#d9c4d1;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:16px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(100deg,#ff408d,#a83cff);
+    box-shadow:0 15px 50px rgba(255,50,140,.25);
+}
+
+.card{
+    margin:40px auto;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:30px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+}
+
+.heart{
+    font-size:70px;
+    animation:pulse 1.5s infinite;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:40px;
+}
+
+.photo{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.12);
+    transition:.5s;
+}
+
+.photo:first-child{
+    grid-column:span 2;
+    height:500px;
+}
+
+.photo:hover{
+    transform:scale(1.02);
+}
+
+.letter{
+    max-width:800px;
+    text-align:left;
+}
+
+.letter p{
+    font-family:Georgia,serif;
+    font-size:20px;
+    margin:20px 0;
+    color:#f5e1eb;
+}
+
+.signature{
+    text-align:right;
+    color:#ff91bf;
+    font-family:Georgia,serif;
+    font-size:30px;
+}
+
+footer{
+    padding:40px 20px;
+    text-align:center;
+    color:#896d7c;
+    font-size:12px;
+}
+
+#surprise{
+    display:none;
+}
+
+#surprise.show{
+    display:block;
+}
+
+.bigheart{
+    font-size:100px;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+@media(max-width:600px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .photo,
+    .photo:first-child{
+        grid-column:auto;
+        height:350px;
+    }
+
+    .photo:first-child{
+        height:470px;
+    }
+
+    .card{
+        padding:25px 18px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- INTRO -->
+
+<section>
+
+<div class="container center">
+
+<div class="heart">💌</div>
+
+<div class="small">
+A Little Surprise
+</div>
+
+<h1>
+For<br>
+<span class="pink">Shana</span> ❤️
+</h1>
+
+<p>
+I made something special for you.<br>
+Scroll slowly... this one is just for you.
+</p>
+
+<a class="btn" href="#birthday">
+Open My Surprise ❤️
+</a>
+
+</div>
+
+</section>
+
+
+<!-- BIRTHDAY -->
+
+<section id="birthday">
+
+<div class="container center">
+
+<div class="small">
+Today Is Your Day
+</div>
+
+<h2>
+Happy Birthday,<br>
+<span class="pink">Shana ❤️</span>
+</h2>
+
+<p>
+Some people become memories.<br>
+Some become home.<br>
+You somehow became both.
+</p>
+
+<a class="btn" href="#memories">
+See Our Memories ↓
+</a>
+
+</div>
+
+</section>
+
+
+<!-- MEMORIES -->
+
+<section id="memories">
+
+<div class="container">
+
+<div class="center">
+
+<div class="small">
+Our Memories
+</div>
+
+<h2>
+The Moments I Keep.
+</h2>
+
+<p>
+Five photographs.<br>
+A thousand feelings.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<img class="photo" src="photo1.jpg">
+
+<img class="photo" src="photo2.jpg">
+
+<img class="photo" src="photo3.jpg">
+
+<img class="photo" src="photo4.jpg">
+
+<img class="photo" src="photo5.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section>
+
+<div class="container">
+
+<div class="center">
+
+<div class="small">
+A Letter For You
+</div>
+
+<h2>
+Read This Slowly.
+</h2>
+
+</div>
+
+
+<div class="card letter">
+
+<p>
+Shana,
+</p>
+
+<p>
+I don't think a website can hold everything
+I feel for you, but I wanted to try anyway.
+</p>
+
+<p>
+Thank you for the smiles, the little moments
+that become memories, and for simply being you.
+</p>
+
+<p>
+On your birthday, I wish you a year full of
+peace, laughter, confidence, adventures and
+every little thing your heart secretly wants.
+</p>
+
+<p>
+And I hope I get to be there for a lot of it —
+making memories, laughing at stupid things,
+taking too many pictures and celebrating
+all the little wins.
+</p>
+
+<p>
+Happy Birthday, Shana.
+You deserve a beautiful year. ❤️
+</p>
+
+<div class="signature">
+Always yours. ❤️
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL SURPRISE -->
+
+<section>
+
+<div class="container center">
+
+<div class="small">
+One Last Surprise
+</div>
+
+<h2>
+I Hid Something Here.
+</h2>
+
+<p>
+You've come this far.<br>
+One final click.
+</p>
+
+<button class="btn" onclick="openSurprise()">
+Open The Secret ❤️
+</button>
+
+
+<div id="surprise">
+
+<div class="bigheart">
+❤️
+</div>
+
+<h2>
+My favourite chapter<br>
+is still being written.
+</h2>
+
+<p>
+Happy Birthday, Shana.<br><br>
+
+Here's to more laughter,<br>
+more photographs,<br>
+more adventures,<br>
+and many more little moments together.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Made specially for Shana ❤️
+
+</footer>
+
+
+<script>
+
+function openSurprise(){
+
+    document.getElementById("surprise").classList.add("show");
+
+    for(let i=0;i<40;i++){
+
+        let heart=document.createElement("div");
+
+        heart.innerHTML="❤️";
+
+        heart.style.position="fixed";
+        heart.style.left=Math.random()*100+"%";
+        heart.style.top="100%";
+        heart.style.fontSize=(15+Math.random()*25)+"px";
+        heart.style.transition="3s";
+        heart.style.zIndex="9999";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function(){
+
+            heart.style.top="-10%";
+            heart.style.transform=
+            "rotate("+(Math.random()*360)+"deg)";
+
+        },50);
+
+        setTimeout(function(){
+
+            heart.remove();
+
+        },3000);
+    }
+}
+
+</script>
+
+</body>
+</html>
